@@ -1,0 +1,16 @@
+name: Google Cloud Services Update
+image: tohero/google-cloud-services-update:latest
+description: Update google cloud platform services (Cloud Tasks, Cloud Scheduler, Datastore...)
+category: Deployment
+repository: https://github.com/toHero/google-cloud-services-update
+vendor:
+  name: Google Cloud Platform
+  website: https://cloud.google.com/
+maintainer:
+  name: tohero
+  website: https://www.tohero.fr/
+tags:
+    - Deployment
+    - Google Cloud Platform
+    - GCP Services and APIs
+  
