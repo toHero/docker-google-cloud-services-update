@@ -67,7 +67,7 @@ for service in $SERVICES; do
     check_update_status "${service}"
     # Cleanup datastore indexes removed from index.yaml (this file must be deployed first)
     info "Cleanup datastore indexes."
-    run gcloud datastore indexes cleanup --project=$PROJECT --quiet ${gcloud_debug_args}
+    run gcloud datastore indexes cleanup "${CONFIG_FILES_DIR}/index.yaml" --project=$PROJECT --quiet ${gcloud_debug_args}
     check_update_status "${service} cleanup"
     ;;
   *)
